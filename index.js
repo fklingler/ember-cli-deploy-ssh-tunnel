@@ -46,7 +46,8 @@ module.exports = {
           dstHost: this.readConfig('dstHost'),
           username: this.readConfig('username'),
           localPort: srcPort,
-          privateKey: this.readConfig('privateKeyPath')
+          privateKey: this.readConfig('privateKeyPath'),
+          passphrase: this.readConfig('passphrase')
         };
 
         if (sshConfig.privateKey) {
